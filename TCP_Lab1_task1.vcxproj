@@ -131,6 +131,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CMath.h" />
+    <ClInclude Include="IMath.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMath.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
