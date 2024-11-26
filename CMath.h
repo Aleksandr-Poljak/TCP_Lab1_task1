@@ -4,6 +4,9 @@
 extern long g_lObjs;
 extern long g_lLocks;
 
+/// <summary>
+///  CMath Component Class .
+/// </summary>
 class CMath : public IMath
 {
 protected:
@@ -26,6 +29,9 @@ public:
 	STDMETHOD(Divide(long, long, long*));
 };
 
+/// <summary>
+/// Class factory class
+/// </summary>
 class MathClassFactory : public IClassFactory
 {
 protected:
@@ -39,6 +45,7 @@ public:
 	STDMETHOD(QueryInterface(REFIID, void**));
 	STDMETHOD_(ULONG, AddRef());
 	STDMETHOD_(ULONG, Release());
+
 	// IClassFactory
 	STDMETHOD(CreateInstance(LPUNKNOWN, REFIID, void**));
 	STDMETHOD(LockServer(BOOL));

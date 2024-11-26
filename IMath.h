@@ -10,7 +10,9 @@ DEFINE_GUID(IID_IMath,
 	0x20846773, 0xb7e3, 0x49d3, 0x89, 0xa1, 0x13, 0x97, 0xb7, 0xb8, 0x68, 0xcd);
 
 
-
+/// <summary>
+///  CMath component interface
+/// </summary>
 class IMath : public IUnknown
 {
 public: 

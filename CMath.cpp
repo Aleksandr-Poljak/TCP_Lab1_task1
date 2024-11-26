@@ -1,6 +1,8 @@
 #include <windows.h>
 #include "Cmath.h"
 
+// Realization of CMath class methods
+
 CMath::CMath()
 {
 	m_lRef = 0;
@@ -60,6 +62,8 @@ STDMETHODIMP CMath::Divide(long lOp1, long lOp2, long* pResult
 	return S_OK;
 }
 
+// Realization of CMath class MathClassFactory
+
 MathClassFactory::MathClassFactory()
 {
 	m_lRef = 0;
@@ -109,6 +113,7 @@ STDMETHODIMP MathClassFactory::CreateInstance
 		delete pMath;
 	return hr;
 }
+
 STDMETHODIMP MathClassFactory::LockServer(BOOL fLock)
 {
 	if (fLock)
