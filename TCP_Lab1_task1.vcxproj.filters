@@ -34,5 +34,7 @@
     <None Include="server.def">
       <Filter>Исходные файлы</Filter>
     </None>
+    <None Include="Manual_server_reg\CLID_task1_server_import32.reg" />
+    <None Include="Manual_server_reg\ProgId_task1_import.reg" />
   </ItemGroup>
 </Project>

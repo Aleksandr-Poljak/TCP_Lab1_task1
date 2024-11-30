@@ -32,8 +32,14 @@ STDAPI DllGetClassObject(REFCLSID rclsid, REFIID riid, void**
 STDAPI DllCanUnloadNow(void)
 {
 	if (g_lObjs || g_lLocks)
+	{
 		return(S_FALSE);
+	}
+		
 	else
+	{
 		return(S_OK);
+	}
+		
 }
 
